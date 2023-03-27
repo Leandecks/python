@@ -1,4 +1,4 @@
-# Problema di Leandro Gridelli 
+## Problema di Leandro Gridelli 
 
 Inserire in INPUT il proprio nome.
 Il programma calcolerà il seguente codice speciale.
@@ -7,5 +7,8 @@ Il programma calcolerà il seguente codice speciale.
 - Se il nome è lungo da 4 a 10 lettere il codice sarà:
   - Scritto al contrario a passi di 2, con l’aggiunta della lettera f se la lunghezza del nome di partenza è pari, con l’aggiunta della lettera q se la lunghezza iniziale è divisibile per 3 e con l’aggiunta della lettera L (maiuscola) se la lunghezza iniziale non è divisibile né per 2 né per 3. Infine il codice sarà scritto con la prima lettera maiuscola
 - Se il nome sarà lungo più di 10 lettere il codice sarà:
-  - Formato dalle prime tre lettere seguendo l’ordine ASCII dei caratteri. Il codice finale sarà tutto minuscolo
-Previeni la situazione che l’utente inserisca degli spazi nel nome, cancellandoli
+  - Formato dalle prime tre lettere seguendo l’ordine ASCII dei caratteri. Il codice finale sarà tutto minuscolo e seguito da "$"
+
+Previeni la situazione che l’utente inserisca degli spazi nel nome, cancellandoli.   
+
+Con l'inserimento di una stringa vuota il programma darà il messaggio: "Come il tuo nome ha 0 lettere?"
