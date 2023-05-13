@@ -35,31 +35,31 @@ ris = 0
 # CALCOLO DI RIS
 
 if scelta == "A":
-    ris = x + y
+    ris = x+y
 elif scelta == "S":
-    ris = x - y
+    ris = x-y
 elif scelta == "M":
-    ris = x * y
+    ris = x*y
 elif scelta == "D":
-    ris = x / y
+    ris = x/y
 elif scelta == "I":
-    ris = x // y
+    ris = x//y
 elif scelta == "R":
-    ris = x % y
+    ris = x%y
 elif scelta == "P":
-    ris = x ** y
+    ris = x**y
 elif scelta == "Q":
     ris = math.sqrt(x)
 elif scelta == "ME":
     ris = (x+y)/2
 elif scelta == "ER":
-    ris = errore / misura
+    ris = errore/misura
 elif scelta == "ERP":
-    ris = errore / misura * 100
+    ris = errore/misura*100
 elif scelta == "EA":
-    ris = (misura - errore) / n_misure
+    ris = (misura-errore) / n_misure
 elif scelta == "%":
-    ris = x * (perc / 100)
+    ris = x * (perc/100)
 
 # OUTPUT
 
