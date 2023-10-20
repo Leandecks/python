@@ -71,3 +71,28 @@ print()
 f = "31;42;33;29;32;38"
 temperature = f.split(";")
 print(temperature)
+
+print()
+
+a = [1,2,3,4]
+a.remove(3)
+print(a)
+
+##del a # tutto a
+del a[1]
+print(a)
+
+print()
+
+frase = "Respiri piano per non far rumore"
+a = frase.split(" ")
+print(a)
+d = "-".join(a)
+print(d)
+
+print()
+
+s = ["Ferrari","Lotus","Mercedes","McLaren"]
+elemento = s.pop()
+print(elemento)
+print(s)
