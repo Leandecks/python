@@ -1,48 +1,38 @@
 # Leandro Gridelli
 
-'''
-Input: "Paarola"
-Output: "1P2a1r1o1l1a"
-'''
+lista = []
+duea = []
+doppie = []
 
-stringa = input("Inserisci una stringa: ")
+# inserimento
 
-contatore = 1
-output = ""
-
-for k in range(1, len(stringa)):
-  if stringa[k] == stringa[k-1]:
-    contatore += 1
-  else:
-    output += str(contatore) + stringa[k-1]
-    contatore = 1
-  
-  if k == len(stringa) - 1:
-    output += str(contatore) + stringa[k]
-
-print(stringa, output)
-
-# Michele Gonzalez
-
-""" 
-stringa = input("Inserisci una stringa: ")
-
-contatore = 1
-lettere = ""
-stringaNuova = ""
-
-for k in range(len(stringa)):
-  if stringa[k] in lettere:
-    contatore += 1
-    if k == (len(stringa) - 1):
-      stringaNuova += str(contatore) + stringa[k]
+while True:
+   inserimento = input("Inserisci una parola: ")
+   if inserimento == "q":
       break
-  else:
-    if k == 0:
-      lettere = stringa[k]
-    else:
-      stringaNuova += str(contatore) + stringa[k-1]
-      contatore = 1
-      lettere = stringa[k]
-print(stringa, stringaNuova)
- """
+   lista.append(inserimento)
+
+# cerca parole con 2 a
+
+lista = ["cane","panna","bicicletta","banana","panno"]
+
+numeroa = 0
+
+for parola in lista:
+   for lettera in parola:
+      if lettera == "a":
+         numeroa += 1
+      if numeroa >= 2:
+         duea.append(parola)
+         numeroa = 0
+
+# cerca parole con doppie
+
+for parola in lista:
+   for posizione_lettera in range(len(parola)):
+      if parola[posizione_lettera] == parola[posizione_lettera+1]:
+         doppie.append(k)
+
+print(lista)
+print(duea)
+##print(doppie)

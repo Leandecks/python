@@ -1,35 +1,48 @@
 # Leandro Gridelli
 
 '''
-Il seguente programma prende 2 liste inserite da tastiera e crea una terza lista formata dagli elementi in comune.
-Tutti i numeri di questa lista vengono trasformati in esadecimali e riscritti al contrario.
-Viene scritta a video questa lista elaborata tranne il primo e l'ultimo elemento.
+Input: "Paarola"
+Output: "1P2a1r1o1l1a"
 '''
 
-a = []
-b = []
-c = []
+stringa = input("Inserisci una stringa: ")
 
-while True:
-  inserimento = input("Inserisci un numero per la lista a: ")
-  if inserimento == "q":
-    break
-  a.append(int(inserimento))
+contatore = 1
+output = ""
 
-while True:
-  inserimento = input("Inserisci un numero per la lista b: ")
-  if inserimento == "q":
-    break
-  b.append(int(inserimento))
+for k in range(1, len(stringa)):
+  if stringa[k] == stringa[k-1]:
+    contatore += 1
+  else:
+    output += str(contatore) + stringa[k-1]
+    contatore = 1
+  
+  if k == len(stringa) - 1:
+    output += str(contatore) + stringa[k]
 
-for k in a:
-  if k in b:
-    k = ''.join(reversed(hex(k)))
-    c.append(k)
+print(stringa, output)
 
-del c[-1]
-del c[0]
+# Michele Gonzalez
 
-print(f"Lista A: {a}")
-print(f"Lista B: {b}")
-print(f"Lista Risultato: {c}")
+""" 
+stringa = input("Inserisci una stringa: ")
+
+contatore = 1
+lettere = ""
+stringaNuova = ""
+
+for k in range(len(stringa)):
+  if stringa[k] in lettere:
+    contatore += 1
+    if k == (len(stringa) - 1):
+      stringaNuova += str(contatore) + stringa[k]
+      break
+  else:
+    if k == 0:
+      lettere = stringa[k]
+    else:
+      stringaNuova += str(contatore) + stringa[k-1]
+      contatore = 1
+      lettere = stringa[k]
+print(stringa, stringaNuova)
+ """
