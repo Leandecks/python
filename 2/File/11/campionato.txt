@@ -1,0 +1,2 @@
+Leo,Gride,Serie Z,4,10,130,500,60
+Maio,Maio,Serie Q,2,10,200,300,40
