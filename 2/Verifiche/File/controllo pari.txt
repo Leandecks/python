@@ -1,0 +1,8 @@
+11001100
+X1001101  : rilevato errore, numero di 1 dispari
+11001010
+X1010011  : rilevato errore, numero di 1 dispari
+10101010
+X0101011  : rilevato errore, numero di 1 dispari
+X0111111  : rilevato errore, numero di 1 dispari
+X1011111  : rilevato errore, numero di 1 dispari
