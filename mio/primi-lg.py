@@ -2,7 +2,7 @@
 
 primes = []
 
-for number in range(2, 100):
+for number in range(2, int(input("Count until: ")) + 1):
 
     isPrime = True
 
