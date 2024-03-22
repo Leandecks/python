@@ -1,6 +1,4 @@
 # Python
 
-Moltissimi Script di Python da livello base a difficile (esercizi).   
-Sito: [Elpha](https://www.elpha.org/m4_python/)   
-Solutore: [Leandecks](https://github.com/Leandecks)
-Alcuni esercizi dal sito nominato, altri creati direttamente da me
+Esercizi di Python dalle ore di informatica del liceo uniti ad alcuni miei.   
+Sito di riferimento: [Elpha](https://www.elpha.org/m4_python/)
