@@ -20,14 +20,18 @@ print(f"Tennisti: {len(tennis)}")
 print(f"Fanno solo calcio: {len(solo_calcio)}")
 print(f"Fanno solo tennis: {len(solo_tennis)}")
 print(f"Totale persone: {len(calcio.union(tennis))}")
-print(f"Fanno solo calcio: {len(solo_calcio.union(solo_tennis))}")
+print(f"Fanno solo calcio o solo tennis: {len(solo_calcio.union(solo_tennis))}")
+print(f"Fanno calcio e tennis: {len(calcio.intersection(tennis))}")
 
-open("set_tennis.txt", "w").write(
+file = open("set_tennis.txt", "w")
+file.write(
     str(len(calcio)) + ","
     + str(len(tennis)) + ","
     + str(len(solo_calcio)) + ","
     + str(len(solo_tennis)) + ","
     + str(len(calcio.union(tennis))) + ","
     + str(len(tennis.union(calcio))) + ","
-    + str(len(solo_calcio.union(solo_tennis))) + "\n"
+    + str(len(solo_calcio.union(solo_tennis))) + ","
+    + str(len(calcio.intersection(tennis))) + "\n"
 )
+file.close()
