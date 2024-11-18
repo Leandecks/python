@@ -1,4 +1,11 @@
 # Leandro Gridelli
+import unicodedata
+
+def desc(p):
+    try:
+        unicodedata.name(chr(p))
+    except ValueError:
+        return "Inesistente"
 
 def utf32(n):
     n = str(bin(n))[2:]
@@ -39,24 +46,11 @@ def utf8(n):
 
 # main
 
-frase = input("Inserisci frase: ")
-
-u32 = ""
-u16 = ""
-u8 = ""
-
-for char in frase:
-    char = ord(char)
-    u32 += utf32(char) + " "
-    u16 += utf16(char) + " "
-    u8 += utf8(char) + " "
-
-print(u32)
-print()
-print()
-print()
-print(u16)
-print()
-print()
-print()
-print(u8)
+cp = "0x" + input("Inserisci codepoint: ")[2:]
+pos = int(cp, 16)
+print(f"Hex: {cp}")
+print(f"Glifo: {chr(pos)}")
+print(f"Descrizione: {desc(pos)}")
+print(f"UTF-32: {utf32(pos)}")
+print(f"UTF-16: {utf16(pos)}")
+print(f"UTF-8: {utf8(pos)}")
