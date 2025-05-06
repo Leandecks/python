@@ -40,17 +40,21 @@ def cerchio(t, r, x, y):
 lato = 75
 
 turtle.Turtle()
+turtle.color("blue")
 turtle.tracer(0, 0)
 # turtle.speed(5)
 
-turtle.penup()
-turtle.right(90)
-turtle.forward(25)
-turtle.pendown()
-turtle.circle(50)
+# turtle.penup()
+# turtle.right(90)
+# turtle.forward(25)
+# turtle.pendown()
+# turtle.circle(50)
 
 for k in range(12):
-    petali(turtle, 200, lato)
+    petali(turtle, 150, lato)
+
+
+cerchio(turtle, 50, 0, 0)
 
 turtle.update()
 turtle.done()
