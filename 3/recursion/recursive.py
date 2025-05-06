@@ -8,12 +8,12 @@ def fatt(n):
         
     return r
 
-def ricorsivo(n):
-    if n == 0:
+def singoli(stringa):
+    if stringa == 0:
         return 1
     else:
-        return n * ricorsivo(n - 1)
+        return stringa * singoli(stringa - 1)
 
 # main
 
-print(fatt(0), ricorsivo(4))
+print(fatt(0), singoli(4))
