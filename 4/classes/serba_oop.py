@@ -26,7 +26,7 @@ class Serbatoio(object):
 # main
 
 serba = Serbatoio(100, 50)
-        
+
 while True:
     print(str(serba), "\n")
     azione = input("Scegli azione:\na - aggiungi\np - preleva\nv - vuota\nf - fai il pieno\nq - esci\n\n> ")
