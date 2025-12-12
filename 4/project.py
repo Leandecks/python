@@ -118,6 +118,7 @@ class Gara(object):
 def crea_arrampicatore():
     if nome_inserito.get() == "" or eta_inserito.get() == "" or paese_inserito == "" or grado_max_inserito == "" or discipline_inserito == "" or tecniche_inserito == "":
         output_arrampicatore.configure(text="ATTENZIONE! Non hai inserito tutti i dati! Così svolgerai la gara con l'arrampicatore di prova Adam Ondra")
+        gara1.arrampicatore = arrampicatore_default
     else:
         discipline = discipline_inserito.get().split(",")
         tecniche = tecniche_inserito.get().split(",")
@@ -241,8 +242,9 @@ percorso_g1 = Percorso("M1", "boulder", "6c", ["coordinativo"])
 percorso_g2 = Percorso("M2", "boulder", "7b", ["tacche"])
 percorso_g3 = Percorso("M3", "boulder", "7a+", ["placca"])
 percorso_g4 = Percorso("M4", "boulder", "5b", ["dyno"])
+arrampicatore_default = Arrampicatore("Adam", "Ondra", 40, "Repubblica Ceca", "9c", ["lead", "boulder"], ["dyno", "placca"])
 
-gara1 = Gara(percorso_g1,percorso_g2, percorso_g3, percorso_g4, Arrampicatore("Adam", "Ondra", 40, "Repubblica Ceca", "9c", ["lead", "boulder"], ["dyno", "placca"]))
+gara1 = Gara(percorso_g1,percorso_g2, percorso_g3, percorso_g4, arrampicatore_default)
 
 # display gara
 
